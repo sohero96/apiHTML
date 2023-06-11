@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- css -->
+    <link rel="stylesheet" href="style.css">
+    <!-- iconos icomoon -->
+    <link rel="stylesheet" href="iconos/style.css">
+    
+    <title>Práctica API HTML  -  vídeo</title>
+</head>
+
+<body>
+    <div class="caja" id="caja">
+        <!-- titulo -->
+        <h1 class="titulo">Selecciona un archivo de vídeo</h1>
+        <!-- boton subida de vídeo -->
+        <input type="file" class="archivo-video" id="file" name="file" accept=".mp4" >
+        <output id="output"></output>
+        
+        <!--botones control vídeo -->
+        <div class="controles" id="controles">
+            <!-- reproducir -->
+            <button class="btn" id="play" title="reproducir"  aria-label="Reproducir" on>
+                <span class="icon-play3"></span>
+            </button>
+            <!-- pausar -->
+            <button class="btn" id="pause" title="pausar" aria-label="Pausar">
+                <span class="icon-pause2"></span>
+             </button>
+            <!-- subir volumen  -->
+            <button class="btn" id="up" title="subir volum " aria-label="Subir volumen">
+                <span class="icon-volume-increase"></span>
+            </button>
+            <!-- bajar volumen -->
+            <button class="btn" id="down" title="bajar volum " aria-label="Bajar volumen">
+                <span class="icon-volume-decrease"></span>
+            </button>
+
+        </div>
+
+    </div>
+
+    <!-- script -->
+    <script src="script.js"></script>
+
+
+</body>
+</html>
